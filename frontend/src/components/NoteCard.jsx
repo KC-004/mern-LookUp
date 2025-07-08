@@ -15,7 +15,7 @@ export const NoteCard = ({note, setNotes}) => {
             toast.success("Note deleted successfully!");
         } catch (error) {
             console.log("Error deleting the note", error)
-            toast.error("Failed to delete note!");
+            toast.error("Failed to delete!");
         }
     }
   return (

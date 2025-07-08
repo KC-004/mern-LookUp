@@ -46,11 +46,11 @@ const NoteDetailPage = () => {
 
         try {
             await api.delete(`/notes/${note._id}`);
-            toast.success("Note deleted!");
+            toast.success("Note deleted successfully!");
             navigate("/");
         } catch (error) {
             console.log("Error in the handleDelete()", error);
-            toast.error("Failed to delete note");
+            toast.error("Failed to delete!");
         }
     };
 
@@ -65,7 +65,7 @@ const NoteDetailPage = () => {
 
         try {
             await api.put(`/notes/${id}`, note);
-            toast.success("Note updated uccessfully!");
+            toast.success("Note updated successfully!");
             navigate("/");
         } catch (error) {
             console.log("Error on handleSave()", error);
